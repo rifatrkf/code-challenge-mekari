@@ -3,9 +3,10 @@
 
 -- Create destination table if it doesn't exist
 CREATE TABLE IF NOT EXISTS destination_table (
-    year INTEGER,
-    month INTEGER,
+    	year INTEGER,
+   	month INTEGER,
 	branch_id INTEGER,
+	total_employees INTEGER,
 	total_salary BIGINT,
 	total_hours INTERVAL,
 	salary_per_hour numeric
@@ -76,7 +77,7 @@ SELECT
 	year,
 	month,
 	branch_id,
-	COUNT(DISTINCT employee_id) AS total_employees,
+	CAST(COUNT(DISTINCT employee_id) AS INTEGER) AS total_employees,
 	SUM(salary) as total_salary ,
 	SUM(total_hours) AS total_hours,
 	ROUND(CAST(SUM(salary)/(EXTRACT(epoch FROM SUM(total_hours))/3600) AS numeric),2) AS salary_per_hour
