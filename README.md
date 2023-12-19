@@ -17,8 +17,8 @@ The project is organized into the following folders:
 ## Business Case
 There are two tables:
 
-● employees - all-time employee information (CSV)
-● timesheets - daily clock-ins and clock-outs of the employees (CSV)
+- employees - all-time employee information (CSV)
+- timesheets - daily clock-ins and clock-outs of the employees (CSV)
 
 As a Data Engineer, we are working with an analyst to figure out whether the current payroll
 scheme (which is a per-month basis) is reasonably cost-effective in terms of cost per hour. It
