@@ -16,6 +16,7 @@ The project is organized into the following folders:
 
 ## Business Case
 There are two tables:
+
 ● employees - all-time employee information (CSV)
 ● timesheets - daily clock-ins and clock-outs of the employees (CSV)
 
