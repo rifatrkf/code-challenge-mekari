@@ -76,6 +76,7 @@ SELECT
 	year,
 	month,
 	branch_id,
+	COUNT(DISTINCT employee_id) AS total_employees,
 	SUM(salary) as total_salary ,
 	SUM(total_hours) AS total_hours,
 	ROUND(CAST(SUM(salary)/(EXTRACT(epoch FROM SUM(total_hours))/3600) AS numeric),2) AS salary_per_hour
