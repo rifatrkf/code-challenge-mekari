@@ -4,8 +4,8 @@
 
 This project is to fulfill Challenge Test in process of recruitment of Data Engineer in Mekari.
 
-Author: Rifat Rachim Khatami Fasha
-Contact: rifat25khatami@gmail.com
+- Author: Rifat Rachim Khatami Fasha
+- Contact: rifat25khatami@gmail.com
 
 ## Project Structure
 
