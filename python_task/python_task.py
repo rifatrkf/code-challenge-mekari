@@ -118,19 +118,24 @@ def load(transformed_data):
     
     # Declare connection to the database
     conn_string = 'postgresql://username:password@host:port/database_name'
+    
     #perform to_sql test and print result
     db = create_engine(conn_string)
     conn = db.connect()
+    
     # Performing incremental load by setting 'append' if table is exist
     transformed_data.to_sql('destination_table', con=conn, if_exists='append', index=False)
 
 
 def automated_pipeline(timesheets_path, employees_path):
+    
     # Extract Phase
     timesheets_data = extract(timesheets_path)
     employees_data = extract(employees_path)
+    
     # Transform data
     transformed_data = transorm(timesheets_data, employees_data)
+    
     # Load to destination table
     load(transformed_data)
 
@@ -139,6 +144,7 @@ def automated_pipeline(timesheets_path, employees_path):
 # Test to run the pipeline
 
 if __name__ == "__main__":
+    
     # define timesheets and employees csv files path
     timesheets_path = "timesheets.csv"
     employees_path = "employees.csv"
