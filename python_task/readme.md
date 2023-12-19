@@ -4,9 +4,9 @@ This is python version to answer the same task as `sql_task`, the difference is 
 The algorithm (problem & assumptions) is similiar to the previous task.
 
 ### Library used
-Pandas -> suitable to perform data transformation for small data
-SQL Alchemy -> Create Connection to the database
-datetime -> perform date conversion
+- Pandas -> suitable to perform data transformation for small data
+- SQL Alchemy -> Create Connection to the database
+- datetime -> perform date conversion
 
 ###
 The script concist of 5 functions:
